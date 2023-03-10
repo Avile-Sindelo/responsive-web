@@ -1,0 +1,84 @@
+#personal-section{
+    background-image: url('../images/mountain.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+   text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-shadow: 1px 1px 1px crimson;
+    color: lightseagreen;
+    text-transform: uppercase;
+}
+
+h2{
+    text-align: center;
+    color: crimson;
+    text-shadow: 1px 1px 1px cadetblue;
+    text-decoration: underline;
+}
+
+h3{
+    color: cadetblue;
+    text-shadow: 1px 1px 1px crimson;
+}
+
+p{
+    color:green;
+    text-shadow: 1px 1px 1px teal;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+table, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 1px;
+    color: beige;
+}
+
+th{
+    background-color: cadetblue;
+    color: beige;
+}
+
+#avile-img{
+    width: 90%;
+    height: 90%;
+}
+
+@media screen and (max-width: 360px) {
+    body{
+        background-color: lightseagreen;
+    }
+    .history-places{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+    }
+
+    .history-picture{
+        margin-top: 100%;
+       
+    }
+
+    #personal-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

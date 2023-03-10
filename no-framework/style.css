@@ -1,0 +1,189 @@
+body{
+    background-color: darkcyan;
+    margin: 0 7% 0 7%;
+    padding: 3%;
+}
+
+th{
+    color: whitesmoke;
+    background-color: grey;
+}
+
+td{
+    color: whitesmoke;
+    text-align: center;
+}
+
+h3{
+    color: coral;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px crimson;
+}
+
+h4{
+    color:cadetblue;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 2px black;
+}
+
+p{
+    color: beige;
+    font-family: lucida Sans;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-shadow: 1px 1px 1px darkslategrey;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+#section-one{
+    background-image: url('../images/mountain1.jpg');
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 1.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#my-name{
+    color:beige;
+    font-size: 250%;
+    text-shadow: 2px 2px 2px darkslategrey;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#language-heading{
+    color:chocolate;
+    text-shadow: 1px 1px 1px black;
+    text-transform: uppercase;
+    text-align: center;
+}
+#picture{
+    width: 40%;
+    height: 40%;
+    margin: 5%;
+}
+
+table, td, th{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+#section-three, #section-four{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.place{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+.place > img{
+    width: 25%;
+    height: 25%;
+    margin: 3%;
+}
+
+#place-card{
+    display: flex;
+    flex-direction: row;
+}
+
+.hist-img{
+    border-radius: 5%;
+    width: 130%;
+    height: 80%;
+    margin: 30% 0 0 10%;
+}
+
+#city{
+    width: 40%;
+    height: 40%;
+    margin: 5% 5% 5% 0;
+}
+
+#place-one, #place-two, #place-three{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#place-one{
+    margin: 0% 20% 0 0;
+}
+
+#place-two{
+    margin: 10% 20% 0 5%;
+}
+
+#place-three{
+    margin: 12% 0% 0% 15%;
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        background-color:dimgray
+    }
+
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #my-name{
+        text-align: center;
+        font-size: 100%;
+    }
+
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #place-card{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #city{
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .hist-img{
+        margin: 20% 0 0 15%;
+        width: 150px;
+        height: 150px;
+    }
+
+    #section-one{
+        background-size: contain;
+        margin: 3% 0 0 9%;
+    }
+    
+    #section-three{
+        margin: 3%;
+    }
+
+    .place{
+        width: 10%;
+    }
+
+    #place-two-section, #place-three-section{
+        margin-top: -50%;
+    }
+}
