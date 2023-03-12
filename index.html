@@ -9,7 +9,7 @@
 <body>
     <style>
         body{
-            background-image: url('images/brasil.jpg');
+            background-image: url('images/landing.jpg');
             background-attachment: fixed;
             background-size: cover;
             background-repeat: no-repeat;
@@ -29,9 +29,21 @@
             
             margin: 10% 5% 10% 5%;
             letter-spacing: 1.5px;
-            font-weight: bolder;
-            color: beige;
-            font-size: 150%;
+            font-weight: lighter;
+            color: crimson;
+            font-size: 100%;
+            border: 1px solid crimson;
+            border-radius: 2%;
+            text-decoration: none;
+            padding: 2%;
+            text-transform: uppercase;
+        }
+
+        a:hover{
+            color: white;
+            background-color: crimson;
+            transition: 1s;
+            border: 1px solid whitesmoke;
         }
 
         #links{
@@ -39,12 +51,13 @@
             justify-content: space-between;
             align-items: center;
         }
+ 
     </style>
 
     <h1> Avile Sindelo's Landing page </h1>
     <div id="links">
         <a href="no-framework/no-framework-index.html"> No framework page </a>
-        <a href="with-framework/simple-grid-index.html"> SimpleGrid framework used </a>
+        <a href="with-framework/simple-grid-index.html"> Simple-Grid framework used </a>
     </div>
 </body>
 </html>
