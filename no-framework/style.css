@@ -104,8 +104,8 @@ table, td, th{
 
 .hist-img{
     border-radius: 5%;
-    width: 130%;
-    height: 80%;
+    width: 200px;
+    height: 200px;
     margin: 30% 0 0 10%;
 }
 
@@ -122,7 +122,7 @@ table, td, th{
 }
 
 #place-one{
-    margin: 0% 20% 0 0;
+    margin: 10% 20% 0 0;
 }
 
 #place-two{
@@ -167,7 +167,7 @@ table, td, th{
     .hist-img{
         margin: 20% 0 0 15%;
         width: 150px;
-        height: 150px;
+        height: 200px;
     }
 
     #section-one{
