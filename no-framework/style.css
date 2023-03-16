@@ -1,6 +1,6 @@
 body{
     background-color: darkcyan;
-    margin: 0 7% 0 7%;
+    margin: 0 7% 0 0%;
     padding: 3%;
 }
 
@@ -38,11 +38,19 @@ p{
     text-shadow: 1px 1px 1px darkslategrey;
 }
 
+.clearfix{
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .section{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5%;
+    margin: 10%;
+    width: 100%;
 }
 
 #section-one{
@@ -50,9 +58,9 @@ p{
     background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
-    border-radius: 1.5%;
     display: flex;
     justify-content: space-between;
+    margin: 0;
 }
 
 #my-name{
@@ -80,110 +88,156 @@ table, td, th{
     border-collapse: collapse;
 }
 
-#section-three, #section-four{
+#section-two{
+    margin: 0%;
+}
+
+#section-three{
     flex-direction: column;
+    width: 80%;
+}
+
+#section-four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.hist-img{
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin: 3% 7% 5% 0;
+}
+
+
+.hist-text{
+    padding: 10%;
+}
+
+#city{
+    width: 400px;
+    height: 250px;
+    margin: 5% 5% 5% 0;
+    float: left;
+}
+
+#city-visit{
+    text-align: center;
+}
+
+#mthatha-hist-places{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100%;
 }
 
 .place{
     display: flex;
     flex-direction: column;
-    width: 35%;
-}
-.place > img{
-    width: 25%;
-    height: 25%;
-    margin: 3%;
+    width: 100%;
+    margin: 4%;
+    height: 100%;
 }
 
-#place-card{
+.place-details{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
 }
 
-.hist-img{
-    border-radius: 5%;
-    width: 200px;
-    height: 200px;
-    margin: 30% 0 0 10%;
-}
-
-#city{
-    width: 40%;
-    height: 40%;
-    margin: 5% 5% 5% 0;
-}
-
-#place-one, #place-two, #place-three{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-#place-one{
-    margin: 10% 20% 0 0;
-}
-
-#place-two{
-    margin: 10% 20% 0 5%;
-}
-
-#place-three{
-    margin: 12% 0% 0% 15%;
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 950px){
     body{
-        background-color:dimgray
+        background-color:darkkhaki;
+        margin: 0%;
     }
 
     .section{
         display: flex;
         flex-direction: column;
+        margin: 3%;
+        width: fit-content;
+        height: fit-content;
     }
 
     #my-name{
         text-align: center;
-        font-size: 100%;
+        font-size: 200%;
     }
 
-    body{
-        margin: 0px;
-        padding: 0px;
+    table{
+        padding: 3%;
+        margin: 0 0 0 10%;
+    }
+
+    p{
+        padding: 5%;
+    }
+
+    h4{
+        text-align: center;
     }
 
     #place-card{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     #city{
         width: 100%;
-        margin-left: 10%;
+        margin: 0;
     }
 
     .hist-img{
-        margin: 20% 0 0 15%;
-        width: 150px;
+        margin: 7% 5% 3% 5%;
+        width: 200px;
         height: 200px;
+        border-radius: 0;
     }
 
     #section-one{
         background-size: contain;
-        margin: 3% 0 0 9%;
-    }
-    
-    #section-three{
-        margin: 3%;
+        width: 100%;
     }
 
-    .place{
-        width: 10%;
+    #place-two-section{
+        margin-top: -250px;
     }
 
-    #place-two-section, #place-three-section{
-        margin-top: -50%;
+     #place-three-section{
+        margin-top: -650px;
+     }
+
+     #place-three{
+        margin: 0 5% 0 0;
+     }
+
+    #bogota{
+        margin: 5% 5% 5% 0;
     }
+
+    .hist-text{
+        padding: 0 0 0 10%;
+    }
+
+
+    #mthatha-hist-places{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section-four{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
 }
+
